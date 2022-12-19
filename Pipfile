@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework-simplejwt = "*"
+django-cors-headers = "*"
+mysqlclient = "*"
+django-q = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
