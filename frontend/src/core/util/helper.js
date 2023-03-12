@@ -1,7 +1,7 @@
 import cogoToast from 'cogo-toast';
 import clipboard from 'copy-to-clipboard';
 
-const TOAST_DEFAULT_POSITION = 'bottom-right';
+const TOAST_DEFAULT_POSITION = 'top-center';
 
 const sleep = (time) => {
     const startTime = new Date().getTime() + time;
@@ -14,7 +14,7 @@ const copy = (data, message = 'Copied') => {
     if (data === null || data === undefined || data === '') return;
     clipboard(data);
 
-    cogoToast.success(message, { position: TOAST_DEFAULT_POSITION });
+    cogoToast.success(message, { position: TOAST_DEFAULT_POSITION  });
 };
 
 const success = (message) =>
