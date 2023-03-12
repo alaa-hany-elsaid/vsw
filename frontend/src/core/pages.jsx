@@ -5,6 +5,7 @@ import Base64ImageDecoder from "../views/pages/common/Base64ImageDecoder.jsx";
 import Base64ImageEncoder from "../views/pages/common/Base64ImageEncoder.jsx";
 import BcryptEncryptor from "../views/pages/common/BcryptEncryptor.jsx";
 import ByteCalculator from "../views/pages/common/ByteCalculator.jsx";
+import ColorPicker from "../views/pages/common/ColorPicker.jsx";
 
 
 let tools = [
@@ -51,13 +52,21 @@ let tools = [
         keywords: 'byte',
         element: <ByteCalculator/>
     },
+    {
+        path: '/tools/color-picker',
+        title: 'Color Picker',
+        keywords: 'color',
+        element: <ColorPicker/>
+    }
 
 
 ]
 let commonPages = [
     ...tools
 ];
-let userPages = [];
+let userPages = [
+
+];
 
 
 export {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Form, Icon, Image, Segment} from 'semantic-ui-react';
-import * as constants from '../../../core/constants';
+import * as constants from '../../../core/util/constants.js';
 import LayoutResolver from "../../layouts/layout-resolver.jsx";
 
 const imageSizeOptions = [

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Form, Icon, Image, Segment} from 'semantic-ui-react';
 import utils from '../../../core/util/helper';
-import * as constants from '../../../core/constants';
+import * as constants from '../../../core/util/constants.js';
 import {useFilePicker} from '../../components/useFilePicker';
 import LayoutResolver from "../../layouts/layout-resolver.jsx";
 
