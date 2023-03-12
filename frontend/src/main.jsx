@@ -4,10 +4,11 @@ import App from './App'
 import './styles/main.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import ErrorPage from "./views/pages/error.jsx";
-import {commonPages, userPages} from "./core/pages.js";
+import {commonPages, userPages} from "./core/pages.jsx";
 import {Flowbite} from "flowbite-react";
 import {Provider} from "react-redux";
 import store from "./core/state/store.js";
+import  'flowbite/dist/flowbite';
 
 const router = createBrowserRouter([
     {

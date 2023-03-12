@@ -1,3 +1,33 @@
+@import 'semantic-ui-css/semantic.min.css';
+
+* body, html {
+    height: unset;
+}
+
+html {
+    font-size: unset;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: unset;
+    background: unset;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: unset;
+    line-height: unset;
+    color: unset;
+}
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
