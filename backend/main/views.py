@@ -8,7 +8,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 
 
-# Create your views here.
+# Create your api here.
 
 
 class LoginView(TokenObtainPairView):
@@ -26,7 +26,7 @@ def get_routes(request):
     routes = [request.build_absolute_uri(url) for url in [
         '/api/login',
         '/api/register',
-        '/api/token/refresh/',
+        '/api/token/refresh',
         '/api/test'
     ]]
 
@@ -44,6 +44,9 @@ def test_end_point(request):
         data = f'Congratulation your API just responded to POST request with text: {text}'
         return Response({'response': data}, status=status.HTTP_200_OK)
     return Response({}, status.HTTP_400_BAD_REQUEST)
+
+
+
 
 
 
